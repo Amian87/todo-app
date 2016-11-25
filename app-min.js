@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".submit_form").on("click",function(n){n.preventDefault();var t=$(".text_box").val();$(".list").append("<li> <span>"+t+"</span> <span> X </span> </li>")}),$(this).on("click",function(){alert("hey")})});
