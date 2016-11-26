@@ -2,7 +2,7 @@ var Storage = function (key) {
 
 	this.key = key;
 
-	this.putValue = function (value) {
+	this.saveValue = function (value) {
 		var data = JSON.parse(localStorage.getItem(this.key));
 		data.push(value);
 		return localStorage.setItem(this.key, JSON.stringify(data));
@@ -26,3 +26,5 @@ var Storage = function (key) {
 	}
 
 }
+
+// 1 when there are values in the localStorage load and display them on initialize

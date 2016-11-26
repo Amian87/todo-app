@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 		event.preventDefault();
 		var todo = $(".text_box").val();
-		todoStorage.putValue(todo);
+		todoStorage.saveValue(todo);
 		$(".list").append('<li> <span>' + todo + '</span> <img id="deleteImg" src="images/delete.png" /> </li>');
 
 	});
@@ -24,10 +24,10 @@ $(document).ready(function() {
 	});
 
 
-	var todoArray = todoStorage.getValue();
-			$.each(todoArray, function(val, todoArray){
-			$(".list").append('<li> <span>' + todoArray + '</span> <img id="deleteImg" src="images/delete.png" /> </li>');
+	var todoListArray = todoStorage.getValue();
+			$.each(todoListArray, function(val, todoArray){
+			$(".list").append('<li> <span>' + todoListArray + '</span> <img id="deleteImg" src="images/delete.png" /> </li>');
 		});
-
+vc
 
 });
