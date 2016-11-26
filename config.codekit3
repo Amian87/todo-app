@@ -27,11 +27,11 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"\/images\/ic_delete_black_24dp_1x.png": {
+	"\/images\/delete.png": {
 		"ft": 32768,
 		"iS": 111,
 		"oA": 0,
-		"oAP": "\/images\/ic_delete_black_24dp_1x.png",
+		"oAP": "\/images\/delete.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -48,6 +48,15 @@
 		"oA": 2,
 		"oAP": "\/index.html",
 		"oF": 0
+		},
+	"\/index.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/index-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/node_modules": {
 		"ft": 65536,
@@ -68,6 +77,15 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"\/server-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/server-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/server.js": {
 		"ft": 64,

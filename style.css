@@ -1,3 +1,6 @@
-.list {
-	list-style: none;
-}
+body {font-family: 'Roboto', sans-serif; text-align: center; margin-top: 100px;}
+
+.list {list-style: none; display: inline-block; position: absolute; left: 670px; font-size: 25px;}
+
+.list li:hover {background-color: #D3D6D7;}
+
