@@ -2,23 +2,32 @@ var ToDoApp = {};
 
 $(document).ready(function() {
 
-	var toDoStorage = new Storage('todoList')
+	var todoStorage = new Storage('todoList')
 
-	if (!toDoStorage.getValue()) {
-		toDoStorage.initialize();
+	if (!todoStorage.getValue()) {
+		todoStorage.initialize();
 	}
 
 	$(".submit_form").on('click', function(event){
 
 		event.preventDefault();
-		var toDo = $(".text_box").val();
-		toDoStorage.putValue(toDo);
-		$(".list").append('<li> <span>' + toDo + '</span> <img id="deleteImg" src="images/delete.png" /> </li>');
+		var todo = $(".text_box").val();
+		todoStorage.putValue(todo);
+		$(".list").append('<li> <span>' + todo + '</span> <img id="deleteImg" src="images/delete.png" /> </li>');
 
 	});
 
 	$(document).on('click', 'li', function(){
 		$(this).remove();
-		toDoStorage.removeValue(this.innerText.trim());
+		todoStorage.removeValue(this.innerText.trim());
+
 	});
+
+
+	var todoArray = todoStorage.getValue();
+			$.each(todoArray, function(val, todoArray){
+			$(".list").append('<li> <span>' + todoArray + '</span> <img id="deleteImg" src="images/delete.png" /> </li>');
+		});
+
+
 });
