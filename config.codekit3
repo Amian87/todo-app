@@ -9,34 +9,16 @@
 	],
 "creatorBuild": "25444",
 "files": {
-	"\/app-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/app-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/index-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/index-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitignore",
+		"oF": 0
 		},
 	"\/node_modules": {
 		"ft": 65536,
 		"oA": 2,
 		"oAP": "\/build\/node_modules",
-		"oF": 0
-		},
-	"\/npm-debug.log": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/npm-debug.log",
 		"oF": 0
 		},
 	"\/package.json": {
@@ -46,6 +28,15 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"\/public\/app-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/app-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/public\/app.js": {
 		"ft": 64,
@@ -124,6 +115,46 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/storage-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/storage-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/storage.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/storage-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/style.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/style-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/todo\/key": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/todo\/key",
+		"oF": 0
+		},
+	"\/todo\/todolist": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/todo\/todolist",
+		"oF": 0
 		}
 	},
 "hooks": [
