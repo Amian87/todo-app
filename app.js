@@ -13,7 +13,8 @@ $(document).ready(function() {
 		event.preventDefault();
 		var todo = $(".text_box").val();
 		todoStorage.saveValue(todo);
-		$(".list").append('<li> <span>' + todo + '</span> <img id="deleteImg" src="images/delete.png" /> </li>');
+		// $(".list").append('<li> <span>' + todo + '</span> <img id="deleteImg" src="images/delete.png" /> </li>');
+		addToList(todo);
 
 	});
 
@@ -25,9 +26,14 @@ $(document).ready(function() {
 
 
 	var todoListArray = todoStorage.getValue();
-			$.each(todoListArray, function(val, todoArray){
-			$(".list").append('<li> <span>' + todoListArray + '</span> <img id="deleteImg" src="images/delete.png" /> </li>');
+		$.each(todoListArray, function(val, todoListArray){
+			// $(".list").append('<li> <span>' + todoListArray + '</span> <img id="deleteImg" src="images/delete.png" /> </li>');
+			addToList(todoListArray);
 		});
-vc
+
+
+	function addToList (item) {
+		$(".list").append('<li> <span>' + item + '</span> <img id="deleteImg" src="images/delete.png" /> </li>');
+	}
 
 });

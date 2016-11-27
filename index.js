@@ -27,4 +27,3 @@ var Storage = function (key) {
 
 }
 
-// 1 when there are values in the localStorage load and display them on initialize
