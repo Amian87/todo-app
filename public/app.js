@@ -33,7 +33,7 @@ $(document).ready(function() {
 
 
 	function addToList (item) {
-		$(".list").append('<li> <span>' + item + '</span> <img id="deleteImg" src="images/delete.png" /> </li>');
+		$(".list").append('<li> <span>' + item + '</span> <img id="deleteImg" src="/images/delete.png" /> </li>');
 	}
 
 });

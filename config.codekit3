@@ -18,42 +18,11 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/app.js": {
+	"\/index-min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/app-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
-	"\/images\/delete.png": {
-		"ft": 32768,
-		"iS": 111,
-		"oA": 0,
-		"oAP": "\/images\/delete.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/images\/ic_delete_black_24dp_2x.png": {
-		"ft": 32768,
-		"iS": 148,
-		"oA": 0,
-		"oAP": "\/images\/ic_delete_black_24dp_2x.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/index.html",
-		"oF": 0
-		},
-	"\/index.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/index-min.js",
+		"oAP": "\/index-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -78,6 +47,66 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/public\/app.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/app-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/public\/images\/delete.png": {
+		"ft": 32768,
+		"iS": 111,
+		"oA": 0,
+		"oAP": "\/public\/images\/delete.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/public\/images\/ic_delete_black_24dp_2x.png": {
+		"ft": 32768,
+		"iS": 148,
+		"oA": 0,
+		"oAP": "\/public\/images\/ic_delete_black_24dp_2x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/public\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/index.html",
+		"oF": 0
+		},
+	"\/public\/index.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/index-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/style-min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/public\/style-min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/public\/style.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/public\/style-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/server-min.js": {
 		"ft": 64,
 		"mi": 1,
@@ -93,28 +122,8 @@
 		"oA": 0,
 		"oAP": "\/server-min.js",
 		"oF": 0,
-		"sC": 0,
+		"sC": 1,
 		"tS": 0
-		},
-	"\/style-min.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/style-min-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/style.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/style-min.css",
-		"oF": 0,
-		"oS": 0
 		}
 	},
 "hooks": [

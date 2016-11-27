@@ -2,9 +2,10 @@ var express = require('express');
 var body_parser = require('body-parser');
 var app = express(); 
 
+app.use(express.static(__dirname + '/public'));
 
-app.get('/todos', function(request, response){
-	response.send('index.html');
+app.get('/', function(request, response){
+	response.render('index');
 	
 
 });
