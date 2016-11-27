@@ -23,14 +23,23 @@ app.get('/api/todo', function(req, res){
 });
 
 app.post('/api/todo', function(req, res){
-	todoStore.saveValue(req.body.item)
+	var todoListArray = todoStore.saveValue(req.body.item)
+	console.log(todoListArray);
+	$.each(todoListArray, function(val, todoListArray){
+		addToList(todoListArray);
+	});
+
 	return res.send("success");
 
 });
 
+app.delete('/api/todo', function(req, res){
+	todoStore.removeValue(req.body.item)
+	return res.send("value deleted");
 
+});
 
 app.listen(3000);
 
 // create delete request and verify running on postman. On your public todo app use jquery.ajax to display to data.
-// move everything to server put and post.
+// move everything to server put and post (use server local storage).
