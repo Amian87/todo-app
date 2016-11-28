@@ -12,8 +12,11 @@ $(document).ready(function() {
 
 		event.preventDefault();
 		var todo = $(".text_box").val();
-		todoStorage.saveValue(todo);
-		addToList(todo);
+		addItemAsync(todo).done(function() {
+				todoStorage.saveValue(todo)
+				addToList(todo);
+			}
+		);
 
 	}); 
 
@@ -24,10 +27,21 @@ $(document).ready(function() {
 	});
 
 
-	var todoListArray = todoStorage.getValue();
-		$.each(todoListArray, function(val, todoListArray){
-			addToList(todoListArray);
+	getItemAsync().done(function(todos){
+		var todoListArray = todoStorage.getValue();
+		$.each(todos, function(index, value){
+			addToList(value);
 		});
+	});
+
+	function getItemAsync (item) {
+		return $.ajax({method: "GET", url: "/api/todo"})
+	}
+
+	function addItemAsync (item){
+		return $.ajax({ method: "POST", url: "/api/todo", data:{"item": item}
+		})
+	}
 
 
 	function addToList (item) {

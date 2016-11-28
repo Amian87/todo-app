@@ -1,0 +1,1 @@
+$(function(){function t(t){var i=[];for(var n in t)i.push($("<li>",{text:t[n]}));$(".block-list").append(i)}$.get("/api/todo",t)});

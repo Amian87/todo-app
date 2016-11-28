@@ -30,4 +30,4 @@ var Storage = function (key) {
 
 }
 
-module.exports = Storage;
+module.exports = Storage; 

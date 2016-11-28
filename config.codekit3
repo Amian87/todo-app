@@ -15,6 +15,21 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/client.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/client-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index.html",
+		"oF": 0
+		},
 	"\/node_modules": {
 		"ft": 65536,
 		"oA": 2,
