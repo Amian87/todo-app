@@ -20,12 +20,16 @@ $(document).ready(function() {
 
 	}); 
 
-	$(document).on('click', 'li', function(){
+	removeItemsAsync().done(function(){
+		$(document).on('click', 'li', function(){
 		$(this).remove();
 		todoStorage.removeValue(this.innerText.trim());
-
+		});
 	});
 
+	function removeItemAsync(){
+		return $.ajax({method: "DELETE", url:"/api/todo"})
+	}
 
 	getItemAsync().done(function(todos){
 		var todoListArray = todoStorage.getValue();
