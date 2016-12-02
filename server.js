@@ -32,6 +32,7 @@ app.post('/api/todo', parseUrlEncoded, function(req, res){
 
 app.delete('/api/todo', function(req, res){
 	todoStore.removeValue(req.body.item)
+	console.log(req.body.item);
 	return res.send("value deleted");
 
 });

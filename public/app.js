@@ -20,15 +20,18 @@ $(document).ready(function() {
 
 	}); 
 
-	removeItemsAsync().done(function(){
-		$(document).on('click', 'li', function(){
+	$(document).on('click', 'li', function(todos){
+	removeItemAsync(todos.currentTarget.innerText.trim()).done(function(todos){
 		$(this).remove();
-		todoStorage.removeValue(this.innerText.trim());
-		});
+		todoStorage.removeValue();	
+	  });
 	});
 
-	function removeItemAsync(){
-		return $.ajax({method: "DELETE", url:"/api/todo"})
+	function removeItemAsync(item){
+		return $.ajax({method: "DELETE", url:"/api/todo", data:{"item": item}, headers: {
+		"content-type":"x-www-form-urlencoded"}
+
+	})
 	}
 
 	getItemAsync().done(function(todos){
